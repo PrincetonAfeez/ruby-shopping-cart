@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Deport</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+  <div id="banner">
+    <%= image_tag("logo.png") %>
+    <%= @page_title || "Progamatic Bookshelf" %>
+  </div>
+  <div class="row" id="cloumns">
+    <div class="col-xs-4 col-md-2" id="side">
+      <div class="slide">
+        <a href="http://127.0.0.1:3000">Home</a><br/>
+        <a href="http://127.0.0.1:3000">Question</a><br/>
+        <a href="http://127.0.0.1:3000">news</a><br/>
+        <a href="http://127.0.0.1:3000">Contact</a><br/>
+      </div>
+    </div>
+    <div class="col-xs-8  col-md-10" id="main">
+      <%= yield %>
+    </div>
+  </div>
+</body>
+</html>
