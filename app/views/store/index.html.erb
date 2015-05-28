@@ -20,7 +20,7 @@
           </div>
           <div class="row">
             <span class="col-md-1 col-xm-3"><%= number_to_currency( product.price) %></span>
-            <span class="col-md-1 col-xm-3"><%= button_to 'Add to Cart', line_items_path(:product_id => product) %></span>
+            <span class="col-md-1 col-xm-3"><%= button_to 'Add to Cart', line_items_path(:product_id => product), :remote => true %></span>
           </div>
         </td>
       <tr>

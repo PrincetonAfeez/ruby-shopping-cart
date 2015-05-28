@@ -14,6 +14,12 @@
   <div class="row" id="cloumns">
     <div class="col-xs-4 col-md-2" id="side">
       <div class="slide">
+        <% if @cart %>
+          <div id = "cart">
+            <%= render @cart %>
+          </div>
+        <% end %>
+        <br/>
         <a href="http://127.0.0.1:3000">Home</a><br/>
         <a href="http://127.0.0.1:3000">Question</a><br/>
         <a href="http://127.0.0.1:3000">news</a><br/>
