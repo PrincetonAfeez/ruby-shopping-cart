@@ -8,7 +8,6 @@ class Notifier < ApplicationMailer
   #
   def order_received(order)
     @order = order 
-    puts "*************************",order.email 
     mail to: order.email, :subject => "Pramatic Store Order Confirmation" 
   end
 
